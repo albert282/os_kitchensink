@@ -159,8 +159,7 @@ QL_DATASOURCE}" use-ccm="true">
 </datasource>
 <datasource jndi-name="java:jboss/datasources/${env.OPENSHIFT_POSTGRESQL_DATASOURCE}" enabled="false" use-java-context="true" pool-name="${env.OPENSHIF
 T_POSTGRESQL_DATASOURCE}" use-ccm="true">
-<connection-url>jdbc:postgresql://${env.OPENSHIFT_POSTGRESQL_DB_HOST}:${env.OPENSHIFT_POSTGRESQL_DB_PORT}/${env.OPENSHIFT_POSTGRESQL_DB_NAME}</conn
-ection-url>
+<connection-url>jdbc:postgresql://${env.OPENSHIFT_POSTGRESQL_DB_HOST}:${env.OPENSHIFT_POSTGRESQL_DB_PORT}/${env.OPENSHIFT_POSTGRESQL_DB_NAME}</connection-url>
 <driver>postgresql</driver>
 <security>
   <user-name>${env.OPENSHIFT_POSTGRESQL_DB_USERNAME}</user-name>
