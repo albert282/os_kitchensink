@@ -483,7 +483,6 @@ cy/factory/default" />
 						class="org.jboss.ws.common.invocation.RecordingServerHandler" />
 				</pre-handler-chain>
 			</endpoint-config>
-			<client-config name="Standard-Client-Config" />
 		</subsystem>
 		<subsystem xmlns="urn:jboss:domain:weld:3.0" />
 	</profile>
