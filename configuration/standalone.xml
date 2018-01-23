@@ -202,12 +202,10 @@ T_POSTGRESQL_DATASOURCE}" use-ccm="true">
 <managed-thread-factory name="default" jndi-name="java:jboss/ee/concurrency/factory/default" context-service="default"/>
 </managed-thread-factories>
 <managed-executor-services>
-<managed-executor-service name="default" jndi-name="java:jboss/ee/concurrency/executor/default" context-service="default" hung-task-threshold="6000
-0" keepalive-time="5000"/>
+<managed-executor-service name="default" jndi-name="java:jboss/ee/concurrency/executor/default" context-service="default" hung-task-threshold="60000" keepalive-time="5000"/>
 </managed-executor-services>
 <managed-scheduled-executor-services>
-<managed-scheduled-executor-service name="default" jndi-name="java:jboss/ee/concurrency/scheduler/default" context-service="default" hung-task-thre
-shold="60000" keepalive-time="3000"/>
+<managed-scheduled-executor-service name="default" jndi-name="java:jboss/ee/concurrency/scheduler/default" context-service="default" hung-task-threshold="60000" keepalive-time="3000"/>
 </managed-scheduled-executor-services>
 </concurrent>
 <default-bindings context-service="java:jboss/ee/concurrency/context/default" datasource="java:jboss/datasources/ExampleDS" managed-executor-service="java:
@@ -225,10 +223,8 @@ cy/factory/default"/>
     <pools>
         <bean-instance-pools>
             <!-- Automatically configure pools. Alternatively, max-pool-size can be set to a specific value -->
-            <strict-max-pool name="slsb-strict-max-pool" derive-size="from-worker-pools" instance-acquisition-timeout="5" instance-acquisition-timeout-unit="MI
-NUTES"/>
-            <strict-max-pool name="mdb-strict-max-pool" derive-size="from-cpu-count" instance-acquisition-timeout="5" instance-acquisition-timeout-unit="MINUTE
-S"/>
+            <strict-max-pool name="slsb-strict-max-pool" derive-size="from-worker-pools" instance-acquisition-timeout="5" instance-acquisition-timeout-unit="MINUTES"/>
+            <strict-max-pool name="mdb-strict-max-pool" derive-size="from-cpu-count" instance-acquisition-timeout="5" instance-acquisition-timeout-unit="MINUTES"/>
         </bean-instance-pools>
     </pools>
     <caches>
