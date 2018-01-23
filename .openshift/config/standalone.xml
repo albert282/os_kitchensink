@@ -34,7 +34,7 @@
     </extensions>
     
     <aaa>
-    </bbb>
+    </bbb
     
     <system-properties>
        <property name="org.apache.coyote.http11.Http11Protocol.COMPRESSION" value="on"/>
